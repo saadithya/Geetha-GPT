@@ -1,73 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Geetha GPT</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Geetha GPT</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background: #4a148c;
-      color: #fff;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      margin-top: 0;
-    }
-    footer {
-      margin-top: 2rem;
-      text-align: center;
-      padding: 1rem;
-      background: #eee;
-    }
+    :root{--bg:#ffffff;--accent:#4a148c;--muted:#6b7280;--card:#f7f7fb;}
+    body{font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif; margin:0; color:#111; background:var(--bg); -webkit-font-smoothing:antialiased;}
+    header{background:linear-gradient(180deg,#4a148c,#6a1b9a); color:#fff; padding:40px 20px; text-align:center;}
+    header h1{margin:0; font-size:28px; letter-spacing:0.2px;}
+    main{max-width:900px; margin:28px auto; padding:24px;}
+    .card{background:var(--card); padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(17,17,17,0.06);}
+    h2{color:var(--accent); margin-top:20px;}
+    p{margin:12px 0; line-height:1.6; color:#222;}
+    ul{margin:8px 0 16px 20px;}
+    li{margin:6px 0;}
+    .muted{color:var(--muted); font-size:14px;}
+    a{color:var(--accent); text-decoration:none;}
+    .small{font-size:13px; color:var(--muted);}
+    footer{max-width:900px; margin:18px auto 40px; text-align:center; color:var(--muted); font-size:13px;}
+    .gov{background:#fffbe6; border-left:4px solid #ffd54f; padding:10px 12px; border-radius:6px; margin:12px 0;}
   </style>
 </head>
 <body>
   <header>
-    <h1>Privacy Policy</h1>
+    <h1>Geetha GPT — Privacy Policy</h1>
+    <p class="small">Effective date: <strong>September 21, 2025</strong></p>
   </header>
+
   <main>
-    <p>
-      At <strong>Geetha GPT</strong>, we respect your privacy. This extension is
-      designed to operate with minimal data collection. We do not collect, store,
-      or sell your personal information.
-    </p>
+    <section class="card" aria-labelledby="intro">
+      <h2 id="intro">Introduction</h2>
+      <p>
+        Geetha GPT ("we", "our", or "the extension") is a browser extension that provides an AI-powered assistant with guidance inspired by the Bhagavad Gita and Chanakya. This Privacy Policy explains what data the extension may access, how that data is used, stored, shared, and how you can contact us. We are committed to protecting your privacy and being transparent about our practices.
+      </p>
+      <p class="small muted">
+        This policy applies only to the Geetha GPT browser extension and not to any third-party websites, services, or APIs you may use.
+      </p>
+    </section>
 
-    <h2>What Data We Use</h2>
-    <ul>
-      <li>Preferences (like API keys or settings) are stored locally in your browser.</li>
-      <li>Queries are securely sent to your chosen AI provider (e.g., OpenAI, Google, Anthropic, or x.ai).</li>
-      <li>No personal data is transmitted, stored, or shared by this extension.</li>
-    </ul>
+    <section class="card" aria-labelledby="effective">
+      <h2 id="effective">Effective Date</h2>
+      <p>
+        This Privacy Policy is effective as of <strong>September 21, 2025</strong>. We may update this policy from time to time; when we do we will update the "Effective Date" above. Please review this page periodically for changes.
+      </p>
+    </section>
 
-    <h2>Third-Party Services</h2>
-    <p>
-      This extension connects to trusted AI providers to generate responses. Your
-      queries are processed securely through their APIs. Please refer to their
-      respective privacy policies for more details.
-    </p>
+    <section class="card" aria-labelledby="data-collected">
+      <h2 id="data-collected">Data We Collect &amp; Why</h2>
 
-    <h2>Contact Us</h2>
-    <p>
-      If you have questions about this Privacy Policy or need support, please contact us at:<br>
-      <a href="mailto:Sujith81159@gmail.com">Sujith81159@gmail.com</a>
-    </p>
+      <h3>Data Collected by the Extension</h3>
+      <ul>
+        <li><strong>Local preferences and settings</strong> — e.g., a user-supplied API key, language or display preferences, and other configuration options. Stored locally using the browser's storage API (if you enable such features).</li>
+        <li><strong>User queries you send</strong> — questions or selected text you explicitly send to an AI provider to generate a response. These queries are forwarded only to the AI provider you choose and are not sent to any other party by us.</li>
+        <li><strong>Temporary runtime information</strong> — short-lived in-memory state used while the extension is active (not persisted unless stored explicitly in local storage).</li>
+      </ul>
+
+      <h3>Data We Do NOT Collect</h3>
+      <ul>
+        <li>We do not collect or transmit personally-identifiable information (PII) to our servers because Geetha GPT does not operate any backend servers that collect user data.</li>
+        <li>We do not collect analytics, tracking IDs, advertising identifiers, or usage telemetry unless you explicitly enable such a feature (and no analytics are included in the shipped extension by default).</li>
+      </ul>
+
+      <h3>Why We Access Certain Browser APIs</h3>
+      <p class="muted small">(These are included here to help Chrome Store reviewers understand each permission.)</p>
+      <ul>
+        <li><strong>storage</strong> — to persist user preferences (for example, storing a user-provided API key or UI settings) locally within the browser. If you do not store preferences, this permission is not required.</li>
+        <li><strong>contextMenus</strong> — to optionally add a right-click menu action that lets you send selected text to the assistant. If the extension does not create a context menu, this permission can be removed.</li>
+        <li><strong>notifications</strong> — to display user-visible reminders or alerts. If no notifications are created, this permission is not required.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="third-party">
+      <h2 id="third-party">Third-Party Services &amp; Host Permissions</h2>
+      <p>
+        To generate AI responses, Geetha GPT may connect directly to third-party AI providers. The extension includes host permissions that allow direct requests to the following provider APIs (only when you configure or use them):
+      </p>
+      <ul>
+        <li><strong>OpenAI</strong> — requests to <code>https://api.openai.com/*</code></li>
+        <li><strong>Google Generative Language API</strong> — requests to <code>https://generativelanguage.googleapis.com/*</code></li>
+        <li><strong>Anthropic</strong> — requests to <code>https://api.anthropic.com/*</code></li>
+        <li><strong>x.ai</strong> — requests to <code>https://api.x.ai/*</code></li>
+      </ul>
+      <p>
+        <strong>Important:</strong> When you enter your API key or send a query, that information is sent directly from your browser to the provider's API endpoint. Geetha GPT does not relay or store your queries on our servers (because we do not run servers for processing queries). Please review the privacy policies of the provider you choose for details about how they handle data.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="data-use">
+      <h2 id="data-use">How We Use Data</h2>
+      <ul>
+        <li><strong>To provide responses:</strong> Your explicit queries are sent to the AI provider you choose so it can generate a response.</li>
+        <li><strong>To persist preferences:</strong> Local storage is used to remember settings such as your chosen AI provider, model, or UI preferences.</li>
+        <li><strong>To enable features:</strong> Context menu permissions are only used to implement features you explicitly trigger (for example, "Send selected text to Geetha GPT").</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="sharing">
+      <h2 id="sharing">Data Sharing &amp; Disclosure</h2>
+      <p>
+        We do not sell or rent your personal data. The only sharing that occurs is:
+      </p>
+      <ul>
+        <li><strong>With your selected AI provider:</strong> Your query text and any user-supplied API key (if required) are sent to the provider to generate responses.</li>
+        <li><strong>As required by law:</strong> We will disclose information if legally required to do so (for example, in response to a valid subpoena), but we will not disclose more than is necessary.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="storage-security">
+      <h2 id="storage-security">Storage, Retention &amp; Security</h2>
+      <p>
+        <strong>Local storage:</strong> Any preferences or API keys you store using the extension are saved locally in your browser's storage area (e.g., <code>chrome.storage</code>). You can remove these at any time by deleting the extension's data or via the extension's options page (if provided).
+      </p>
+      <p>
+        <strong>Security:</strong> We follow best practices to minimize risk. All requests to third-party APIs should be made over HTTPS. Keep your API keys private and avoid sharing them. If you believe an API key has been compromised, revoke it with the provider and update it in the extension.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="user-rights">
+      <h2 id="user-rights">Your Rights &amp; Choices</h2>
+      <h3>Access &amp; Deletion</h3>
+      <p>
+        You can delete any locally stored preferences or API keys by:
+      </p>
+      <ul>
+        <li>Using the extension's options/settings page (if provided) to clear stored data.</li>
+        <li>Removing the extension from your browser; this typically clears extension-specific storage.</li>
+      </ul>
+
+      <h3>Opting Out</h3>
+      <p>
+        The extension does not collect analytics by default. If any optional telemetry feature is added, it will be documented and you will be given a clear opt-in choice.
+      </p>
+
+      <h3>Data Requests (GDPR/CCPA)</h3>
+      <p>
+        If you are in the EU (GDPR) or California (CCPA) and you want to exercise your rights (access, correction, deletion, data portability, or to opt out of sale), contact us at the address below and include sufficient detail to locate your data. Because we do not maintain server-side personal data by default, there may be little to retrieve; however, we will help where possible.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="permissions">
+      <h2 id="permissions">Permissions Explanation (for Chrome Web Store)</h2>
+      <p class="muted small">
+        The extension may request the following permissions. Only request and keep the permissions you actually use in your published manifest to avoid store review errors and to preserve user trust.
+      </p>
+      <ul>
+        <li><strong>storage</strong> — Save settings and API keys locally.</li>
+        <li><strong>contextMenus</strong> — Add a right-click action to send selected text to the assistant.</li>
+        <li><strong>notifications</strong> — Show user-visible notifications and reminders.</li>
+      </ul>
+      <div class="gov">
+        <strong>Developer recommendation:</strong> Only include the permissions in your <code>manifest.json</code> that your code actually calls. This avoids Chrome Web Store review issues (including the "Purple Potassium" error).
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="children">
+      <h2 id="children">Children</h2>
+      <p>
+        The extension is not designed for children under 13. We do not knowingly collect data from children under 13.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="changes">
+      <h2 id="changes">Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy to reflect changes in our practices or for legal, operational, or regulatory reasons. If we make material changes we will post a prominent notice here and update the Effective Date.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="contact">
+      <h2 id="contact">Contact &amp; Support</h2>
+      <p>
+        For privacy inquiries, support, or to request data deletion, please contact:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:Sujith81159@gmail.com">Sujith81159@gmail.com</a>
+      </p>
+      <p class="small muted">
+        Please include "Geetha GPT — Privacy Request" in the email subject for privacy-related requests.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="ack">
+      <h2 id="ack">Acknowledgement</h2>
+      <p>
+        By installing and using the Geetha GPT extension you acknowledge that you have read this Privacy Policy and agree to the practices described herein.
+      </p>
+    </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Geetha GPT. All rights reserved.</p>
+    <div>© 2025 Geetha GPT. All rights reserved.</div>
+    <div class="small muted">This Privacy Policy applies only to the Geetha GPT browser extension and not to any third-party services.</div>
   </footer>
 </body>
 </html>
